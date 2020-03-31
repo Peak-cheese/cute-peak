@@ -1,0 +1,106 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+header {
+    height: 80px;
+    width: 1920px;
+    margin: 0px;
+    padding: 0px;
+    height: 80px;
+    font-family: sans-serif;
+}
+
+#logo {
+    padding: 0px;
+    margin: 0px;
+    float: left;
+}
+
+div#navfirst {
+    padding: 0px;
+    border: 0px;
+    margin: 0px;
+}
+
+header ul {
+    padding: 0px;
+    margin: 0px 0px 0px 300px;
+}
+
+header li {
+    color: rgb(241, 184, 59);
+    background-color: rgba(0, 0, 0, 0);
+    /*设置背景为透明*/
+    width: 200px;
+    height: 80px;
+    text-align: center;
+    list-style: none;
+    float: left;
+    font-size: 30px;
+    line-height: 80px;
+}
+
+header li:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+    /*使li盒子可变化颜色*/
+    color: snow;
+    transition: .4s;
+}
+
+header a {
+    text-decoration: none;
+    color: rgb(241, 184, 59);
+}
+
+#toplog {
+    padding: 0px;
+    margin: 0px;
+}
+
+header #topsignup {}
+
+#signpadding {
+    padding: 0px;
+    margin: 16px 0px 0px 0px;
+    width: 180px;
+    height: 50px;
+    font-size: 30px;
+    font-weight: bold;
+    background: rgb(241, 171, 42);
+    text-align: center;
+    float: right;
+    list-style: none;
+    line-height: 52px;
+    color: snow;
+    border-radius: 15px;
+}
+
+#signpadding:hover {
+    background-color: gray;
+    /*使li盒子可变化颜色*/
+    transition: .4s;
+}
+
+#topsignup {
+    width: 400px;
+    padding: 0px 0px 0px 1360px;
+    margin: 0 auto;
+}
+
+header #toplogin {
+    padding: 0px;
+    margin: 0px 0px 0px 600px;
+    background-color: rgba(0, 0, 0, 0);
+    /*设置背景为透明*/
+    width: 140px;
+    height: 80px;
+    text-align: center;
+    list-style: none;
+    float: left;
+    font-weight: bolder;
+    font-size: 25px;
+    line-height: 90px;
+    color: rgb(233, 185, 80);
+}
