@@ -1,0 +1,65 @@
+body{
+    background-color: #444444;
+    font-family:Georgia,"Times New Roman",Times,serif;
+    font-size:large;
+    margin:0 auto;
+    padding-top:5px;
+    padding-bottom:5px;
+  }
+  h1{
+    color:#1d89c7;
+    font-family:sans-serif;
+    font-size: larger;
+  }
+  #allcontent{
+    width:800px;/*800px*/
+    height: 900px;
+    padding-top:3px;
+    padding-bottom:3px;
+    margin:0 auto;/*使内容居中*/
+    background-color: #eeeeee;
+  }
+  #header{
+    font-family:sans-serif;
+    font-size: larger;
+    color:#ffffff;
+    font-weight:900px;
+    height: 30px;
+    background-color:#1d89c7;
+    text-align: right;
+  }
+  #main{
+    float: left;
+    margin: 0px 15px 10px 15px;
+    width: 450px;/*480px*/
+  }
+  #sidebar{
+    background-color: #cccccc;
+    margin: auto 0px auto 480px;
+    width: 300px;
+    padding: 10px 10px;
+  }
+  #name{
+    color:#1d89c7;
+    font-family:sans-serif;
+    font-size: xx-large;
+    text-align: center;
+  }
+  .information{
+    font-weight: bold;
+  }
+  .process{
+    color:#166da0
+  }
+  .social{
+    font-weight: bold;
+  }
+  .some{
+    color: #444444;
+    text-align: center;
+    border-color: #1d89c7;
+    border-style: solid;
+    width: 110px;
+    margin: auto 80px;
+  }
+  
