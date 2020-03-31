@@ -1,0 +1,238 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    background-image: url(../images/background-new.png);
+}
+
+div#button {
+    display: flex;
+    flex-direction: column;
+    /*灵活的项目将垂直显示，正如一个列一样*/
+    font-family: tahoma;
+    font-size: 18px;
+    background-color: transparent;
+    perspective: 1000px;
+    /*perspective 属性定义 3D 元素距视图的距离，以像素计。该属性允许您改变 3D 元素查看 3D 元素的视图。*/
+    justify-content: center;
+    /*横轴居中*/
+    align-items: center;
+    /*竖轴居中*/
+}
+
+.btn {
+    display: block;
+    position: relative;
+    width: 200px;
+    height: 80px;
+    text-align: center;
+    transition: width 0.8s cubic-bezier(0.23, 1, 0.32, 1), height 0.8s cubic-bezier(0.32, 1, 0.32, 1), transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transform-style: preserve-3d;
+    transform-origin: 50% 50%;
+}
+
+.btn-front {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: 80px;
+    font-size: 24px;
+    background-color: #e97b4f;
+    color: snow;
+    cursor: pointer;
+    /*cursor 属性规定要显示的光标的类型（形状）:光标呈现为指示链接的指针（一只手）*/
+    backface-visibility: hidden;
+    transition: background 0.15s ease, line-height 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.btn-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #eeeeee;
+    color: #222;
+    transform: translateZ(-2px) rotateX(180deg);
+    overflow: hidden;
+    transition: box-shadow 3s ease;
+}
+
+.btn-back p {
+    margin-top: 27px;
+    margin-bottom: 27px;
+}
+
+.btn-back button {
+    padding: 12px 20px;
+    width: 30%;
+    margin: 0px 5px;
+    background-color: transparent;
+    /*背景为透明*/
+    border: 0;
+    border-radius: 2px;
+    font-size: 1em;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    transition: background 0.3s ease;
+}
+
+.btn-back button:focus {
+    outline: none;
+}
+
+.btn-back button.yes {
+    color: #2197f3;
+}
+
+.btn-back button.no {
+    color: #2197f3;
+}
+
+.btn-back button.yes:hover {
+    background-color: #2b465c;
+}
+
+.btn-back button.no:hover {
+    background-color: #dddddd;
+}
+
+.btn.is-open .btn-back {
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
+}
+
+
+/*后面就是我看不懂的地方了*/
+
+.btn[data-direction="left"] .btn-back,
+.btn[data-direction="right"] .btn-back {
+    transform: translateZ(-2px) rotateY(180deg);
+}
+
+.btn.is-open {
+    width: 400px;
+    height: 150px;
+}
+
+.btn[data-direction="top"].is-open {
+    transform: rotateX(180deg);
+}
+
+.btn[data-direction="right"].is-open {
+    transform: rotateY(180deg);
+}
+
+.btn[data-direction="bottom"].is-open {
+    transform: rotateX(-180deg);
+}
+
+.btn[data-direction="left"].is-open {
+    transform: rotateY(-180deg);
+}
+
+
+/*button 结束*/
+
+
+/*以下是注册界面的样式*/
+
+html {
+    box-sizing: border-box;
+    font-size: 15px;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3 {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+main {
+    padding: 6rem;
+    font-family: Tahoma;
+    width: 100%;
+}
+
+h1 {
+    color: black;
+    text-align: center;
+    font-size: 3rem;
+    padding: 0 0 20px;
+}
+
+h3 {
+    color: black;
+    text-align: center;
+    font-size: 2rem;
+}
+
+h4 {
+    padding-bottom: 40px;
+    color: black;
+    text-align: center;
+    font-size: 2rem;
+}
+
+#login {
+    width: 400px;
+    margin: auto;
+    background-color: transparent;
+    position: relative;
+    top: -71px;
+    padding: 30px;
+}
+
+#login h4 {
+    color: rgb(70, 65, 65);
+    font-size: 1.6rem;
+}
+
+#login input {
+    background-color: transparent;
+    display: block;
+    border: none;
+    width: 100%;
+    outline: none;
+    font-size: 1.5rem;
+    border-bottom: 1.8px solid black;
+}
+
+#login .label {
+    font-weight: normal;
+    font-size: 20px;
+    position: relative;
+    pointer-events: none;
+    left: 0;
+    top: -30px;
+    transition: 0.2s ease all;
+    color: black;
+}
+
+#login .fideld {
+    margin-top: 30px;
+    position: relative;
+}
+
+
+/*底下又是我看不懂的了*/
+
+#login input:focus~.label,
+#login input:not(:focus):valid~.label {
+    top: -3px;
+    opacity: 1;
+    font-size: 1rem;
+}
+
+
+/*注册表结束*/

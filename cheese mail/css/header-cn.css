@@ -1,0 +1,74 @@
+body {
+    background-color: #b5a789;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    height: 80px;
+    width: 1980px;
+    background: #efe5d0 url(../images/headerback.png) top left;
+    margin: 0px;
+    padding: 0px;
+    height: 80px;
+}
+
+#logo {
+    padding: 0px;
+    margin: 0px;
+    float: left;
+}
+
+div#navfirst {
+    padding: 0px;
+    border: 0px;
+    margin: 0px;
+    overflow: hidden;
+    /*内容被修剪，并且其余内容是不可见的*/
+    line-height: 80px;
+    padding-left: 10px;
+}
+
+header ul {
+    padding: 0px;
+    margin: 0px 0px 0px 300px;
+}
+
+header li {
+    background-color: rgba(0, 0, 0, 0);
+    /*设置背景为透明*/
+    width: 200px;
+    height: 80px;
+    text-align: center;
+    list-style: none;
+    float: left;
+    font-size: 50px;
+    line-height: 80px;
+    cursor: pointer;
+    /*使整块可选*/
+    /*box-shadow: 0px 0px 2px;*/
+    /*阴影的设置*/
+}
+
+header li:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+    /*使li盒子可变化颜色*/
+    color: snow;
+    transition: .4s;
+    padding-top: 80px;
+}
+
+header li span {
+    margin-top: -160px;
+    display: block;
+    /*将此元素被显示为块级元素*/
+}
+
+a {
+    overflow: hidden;
+    /*内容被修剪，并且其余内容是不可见的*/
+    float: left;
+    text-decoration: none;
+    color: black;
+}
