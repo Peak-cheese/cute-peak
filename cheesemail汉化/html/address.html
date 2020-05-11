@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="../css/address.css" type="text/css">
+    <link rel="stylesheet" href="../css/font-awesome.min.css" type="text/css">
+    <link rel="icon" href="../images/logo1.ico" type="image/x-ico">
+    <script>
+        function tab(obj) {
+            if (event.keyCode == 9) {
+                obj.value = obj.value + "       "; // 这个script使textarea中Tab键可用
+                event.returnValue = false;
+            }
+        }
+    </script>
+
+</head>
+
+<body style="overflow-y:scroll;">
+    <div class="landing-page"></div>
+    <div class="all">
+        <div id="logo">
+            <img src="../images/logo1.png" alt="Just a logo.">
+        </div>
+        <div class="navbar">
+            <div class="personal">
+                <strong>PEAKcheese</strong><a href="#">&lt;958308471@cheese.com&gt;</a><br>
+                <a href="#">Homepage</a> | <a href="#">Settings</a> | <a href="#">Feedback</a> | <a href="login.html">Exit</a>
+            </div>
+            <div class="search-box">
+                <input class="search-txt" type="text" name="" placeholder="Type to search">
+                <a class="search-btn" href="#">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="sidebar">
+            <div class="largeside">
+                <ul>
+                    <li>
+                        <a href="individualspace.html" title="Just write!">
+                            <span id="began"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Write</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" title="Just write!">
+                            <span id="began"><i class="fa fa-envelope-o" aria-hidden="true"></i> Receive</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="address.html" title="Just write!">
+                            <span id="began"><i class="fa fa-address-book-o"></i> Address</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+            <br>
+            <div class="littleside">
+                <ul>
+                    <li>
+                        <a href="#" title="Just write!">
+                            <span id="began">Inbox</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" title="Just write!">
+                            <span id="began">Draft box</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" title="Just write!">
+                            <span id="began">Sented</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" title="Just write!">
+                            <span id="began">Deleted</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" title="Just write!">
+                            <span id="began">Trash can</span>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+        <div class="main">
+            <iframe src="people.html" width="100%" height="100%" frameborder="1" name="address" scrolling="auto"></iframe>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

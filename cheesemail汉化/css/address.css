@@ -1,0 +1,209 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    font-family: Georgia, "Times New Roman", Times, serif，sans-serif;
+}
+
+
+/*以下是logo*/
+
+#logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+}
+
+
+/*以下是动态背景板*/
+
+.landing-page {
+    width: 1920px;
+    height: 960px;
+    background: rgba(46, 65, 87, 0.329);
+    background: url(../images/background2.png) no-repeat;
+    position: relative;
+    overflow: hidden;
+}
+
+
+/*以下是导航栏*/
+
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.navbar {
+    width: 1620px;
+    min-width: 100px;
+    height: 75px;
+    background: rgba(0, 0, 0, 0.3);
+    box-shadow: 0px -2px 2px #585757;
+    margin-top: 0px;
+    padding-left: 300px;
+    font-family: sans-serif;
+}
+
+.personal {
+    color: aliceblue;
+    margin: none;
+    padding: 13px;
+}
+
+.personal a {
+    text-decoration: none;
+    display: inline-block;
+    color: aliceblue;
+}
+
+
+/*以下是搜索框的样式*/
+
+.search-box {
+    position: absolute;
+    top: 37px;
+    left: 1600px;
+    transform: translate(-50%, -50%);
+    background: #7da4ce;
+    height: 40px;
+    border-radius: 40px;
+    padding: 10px;
+}
+
+.search-box a {
+    text-decoration: none;
+}
+
+.search-box:hover>.search-txt {
+    width: 140px;
+    padding: 0px 6px;
+}
+
+.search-btn {
+    color: wheat;
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #7da4ce;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-txt {
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0px;
+    width: 0px;
+    color: rgb(32, 29, 24);
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 40px;
+}
+
+
+/*以下是主内容区*/
+
+.main {
+    top: 100px;
+    left: 222px;
+    width: 1500px;
+    height: 800px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 auto;
+    position: absolute;
+    z-index: 1;
+    font-size: 3em;
+    min-width: 1000px;
+    min-height: 800px;
+    background: rgba(0, 0, 0, 0.3);
+    box-shadow: 0px -2px 2px #585757;
+    font-family: sans-serif;
+}
+
+
+/*以下是左边栏*/
+
+.sidebar {
+    left: 22px;
+    width: 10%;
+    height: 65%;
+    min-height: 560px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 auto;
+    position: absolute;
+    top: 100px;
+    z-index: 1;
+    font-size: 3em;
+}
+
+.sidebar {
+    min-width: 155px;
+    background: rgba(0, 0, 0, 0.3);
+    box-shadow: 0px -2px 2px #585757;
+    font-family: sans-serif;
+}
+
+.sidebar li {
+    padding-bottom: 7px;
+}
+
+.sidebar .largeside a {
+    min-width: 116px;
+    display: inline-block;
+    text-decoration: none;
+    padding: 3px 15px;
+    color: white;
+    border-radius: 3px;
+    font-size: 0.45em;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.sidebar .largeside a:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+    transition: .1s;
+}
+
+.sidebar .littleside a {
+    min-width: 100px;
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 6px 25px;
+    color: white;
+    border-radius: 3px;
+    font-size: 0.35em;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.sidebar .littleside a:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+    transition: .1s;
+}
+
+.sidebar ul li {
+    display: block;
+    height: 50px;
+}
+
+select {
+    background: rgb(183, 221, 253);
+    /*去掉边框*/
+    border: none;
+    outline: none;
+}
+
+
+/*以下是图标管理*/

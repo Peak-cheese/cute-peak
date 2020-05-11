@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(../images/background2.png) no-repeat;
+}
+
+
+/*以下是logo*/
+
+#logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+}
+
+
+/*以下是动态导航栏*/
+
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.navbar {
+    width: 100%;
+    min-width: 1080px;
+    height: 75px;
+    background: rgba(0, 0, 0, 0.3);
+    box-shadow: 0px -2px 2px #585757;
+    margin-top: 0px;
+    padding-left: 300px;
+    font-family: sans-serif;
+}
+
+.navbar ul {
+    list-style: none;
+}
+
+.navbar ul li {
+    float: left;
+    width: 200px;
+    height: 75px;
+    background: rgba(0, 0, 0, 0);
+    margin-right: 1px;
+    font-size: 20px;
+}
+
+.navbar ul li:hover {
+    color: #ffffff;
+    background: rgb(124, 167, 231);
+    animation: changeColor 3s infinite;
+    animation-delay: 1s;
+    transition: .4s;
+}
+
+@keyframes changeColor {
+    0% {
+        background: #7da4ce;
+    }
+    50% {
+        background: #b3c6d5;
+    }
+    100% {
+        background: #7da4ce;
+    }
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    display: block;
+    text-align: center;
+    line-height: 75px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.navbar ul li ul li {
+    display: none;
+    width: 200px;
+    height: 75px;
+    float: initial;
+    background: #6A8DC3;
+    font-size: 20px;
+    transition: 3s;
+}
+
+.navbar ul li:hover ul li {
+    display: block;
+    border-top: 1px solid rgba(46, 158, 184, 0.5);
+}
+
+
+/*以下是主内容区*/
+
+.container {
+    min-width: 1400px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    transition: 0.5s;
+}
+
+.container .card {
+    width: 350px;
+    height: 450px;
+    position: relative;
+    background: #ffffff;
+    opacity: .8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.container:hover .card {
+    filter: blur(5px);
+    transform: scale(.7);
+}
+
+.container .card:hover {
+    filter: blur(0px);
+    transform: scale(1);
+}
+
+.container .card:before {
+    content: ' ';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    z-index: 1;
+    transition: 0.5s;
+}
+
+.container .card:hover:before {
+    border-radius: 18px;
+    background: rgba(1, 1, 1);
+    transform: scaleY(1.15) scaleX(1.08);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .2);
+}
+
+.container .card .content {
+    text-align: center;
+    z-index: 2;
+    padding: 0 20px;
+    transition: 0.5s;
+}
+
+.container .card:hover .content {
+    color: #ffffff;
+}
+
+.container .card .content h2 {
+    font-size: 0em;
+}
+
+.container .card:hover .content h2 {
+    font-size: 3em;
+}
+
+.container .card .content p {
+    font-size: 0em;
+}
+
+.container .card:hover .content p {
+    margin-top: 15px;
+    font-size: 1.4em;
+}
+
+.container .card .content a {
+    display: inline-block;
+    margin-top: 65px;
+    padding: 12px 18px;
+    background: #262626;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 1.4em;
+}
+
+.container .card:hover .content a {
+    background: rgb(10, 85, 146);
+}
+
+
+/*以下是logo管理*/
+
+.littlelogo {
+    position: relative;
+    height: 130px;
+    width: 130px;
+}
+
+.container .card:hover .littlelogo {
+    height: 0px;
+    width: 0px;
+}

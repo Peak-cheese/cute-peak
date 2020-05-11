@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="../css/individualspace.css" type="text/css">
+    <link rel="stylesheet" href="../css/font-awesome.min.css" type="text/css">
+    <link rel="icon" href="../images/logo1.ico" type="image/x-ico">
+    <script>
+        function tab(obj) {
+            if (event.keyCode == 9) {
+                obj.value = obj.value + "       "; // 这个script使textarea中Tab键可用
+                event.returnValue = false;
+            }
+        }
+    </script>
+</head>
+
+<body style="overflow-y:scroll;">
+    <div class="landing-page"></div>
+    <div class="all">
+        <div id="logo">
+            <img src="../images/logo1.png" alt="Just a logo.">
+        </div>
+        <div class="navbar">
+            <div class="personal">
+                <strong>PEAKcheese</strong><a href="#">&lt;958308471@cheese.com&gt;</a><br>
+                <a href="#">Homepage</a> | <a href="#">Settings</a> | <a href="#">Feedback</a> | <a href="login.html">Exit</a>
+            </div>
+            <div class="search-box">
+                <input class="search-txt" type="text" name="" placeholder="Type to search">
+                <a class="search-btn" href="#">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="sidebar">
+            <div class="largeside">
+                <ul>
+                    <li>
+                        <a href="individualspace.html" title="Just write!">
+                            <span id="began"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Write</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" title="Just write!">
+                            <span id="began"><i class="fa fa-envelope-o" aria-hidden="true"></i> Receive</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="address.html" title="Just write!">
+                            <span id="began"><i class="fa fa-address-book-o"></i> Address</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+            <br>
+            <div class="littleside">
+                <ul>
+                    <li>
+                        <a href="#" title="Just write!">
+                            <span id="began">Inbox</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" title="Just write!">
+                            <span id="began">Draft box</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" title="Just write!">
+                            <span id="began">Sented</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" title="Just write!">
+                            <span id="began">Deleted</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" title="Just write!">
+                            <span id="began">Trash can</span>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+        <div class="main">
+            <div class="main-box">
+                <div class="text-box">
+                    <div class="des"><strong>Massage to Furture</strong><br>
+                        <input type="submit" class="btn" value="Send">
+                        <input type="submit" class="btn" value="Save">
+                        <input type="submit" class="btn" value="Close">
+                        <div class="little">
+                            <a href="#">Preview</a> |
+                            <a href="#">new window</a>
+                        </div>
+                    </div>
+                    <div class="aside-box">
+                        <div class="aside">
+                            <h3>Address book</h3>
+                            <input type="text" class="input2"><i class="fa fa-search" aria-hidden="true" style="font-size: 20px;"></i>
+                            <div class="nametitle">
+                                <div class="title">Rencent Contacts</div>
+                                <div class="name">
+                                    <ul>
+                                        <li>
+                                            <a href="#">Peak Cheese</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Pike Freeman</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Mao Mao</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Vicky Forest</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Trush Wen</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Zhenwei Zhao</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Beefcake Van</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">San Diego Li</a>
+                                        </li>
+                                        <li>
+                                            <a href="#"> . . . </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text">
+                        <h4><a href="#">Recipient</a></h4> <input type="text" class="input1"><br>
+                        <p><a href="#">Add Cc</a>-<a href="#">Add Bcc</a> |
+                            <a href="#">Send separately</a></p>
+                        <h4>Theme</h4>
+                        <input type="text" class="input1"><br>
+                        <p><a href="#"><i class="fa fa-paperclip" aria-hidden="true"></i> Add attachments</a> |
+                            <a href="#"><i class="fa fa-file-text-o" aria-hidden="true"></i> Documentation</a> |
+                            <a href="#"><i class="fa fa-picture-o" aria-hidden="true"></i> Photo</a> |
+                            <a href="#"><i class="fa fa-smile-o"></i> Look</a> |
+                            <a href="#"><i class="fa fa-plus-square-o"></i> More</a></p>
+                        <h4>Text</h4>
+                        <textarea type="text" class="text2" style="font-size:22px" onkeydown="tab(this)"></textarea><br>
+                        <p>From : <input type="text" class="input2">
+                            <select>
+                                <option value="saab">albertfreeman@foxmail.com</option>
+                                <option value="volvo">958308471@qq.com</option>
+                                <option value="opel">meylholmes@gmail.com</option>
+                            </select> Receive Date：
+                            <input type="text" class="input2">
+                        </p>
+
+                    </div>
+
+                    <div class="des2">
+                        <input type="submit" class="btn" value="Send">
+                        <input type="submit" class="btn" value="Save">
+                        <input type="submit" class="btn" value="Close">
+                        <div class="little">
+                            <a href="#">Preview</a> |
+                            <a href="#">new window</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

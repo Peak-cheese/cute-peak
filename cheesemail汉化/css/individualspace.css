@@ -1,0 +1,433 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    font-family: Georgia, "Times New Roman", Times, serif，sans-serif;
+}
+
+
+/*以下是logo*/
+
+#logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+}
+
+
+/*以下是动态背景板*/
+
+.landing-page {
+    width: 1920px;
+    height: 960px;
+    background: rgba(46, 65, 87, 0.329);
+    position: relative;
+    overflow: hidden;
+}
+
+.landing-page::after {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background: url(../images/background2.jpg) no-repeat;
+    background-size: cover;
+    opacity: .7;
+    animation: anim 20s linear infinite;
+}
+
+@keyframes anim {
+    50% {
+        transform: scale(1.3);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.all {
+    width: 100%;
+    height: 100%;
+}
+
+
+/*以下是导航栏*/
+
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.navbar {
+    width: 1620px;
+    min-width: 100px;
+    height: 75px;
+    background: rgba(0, 0, 0, 0.3);
+    box-shadow: 0px -2px 2px #585757;
+    margin-top: 0px;
+    padding-left: 300px;
+    font-family: sans-serif;
+}
+
+.personal {
+    color: aliceblue;
+    margin: none;
+    padding: 13px;
+}
+
+.personal a {
+    text-decoration: none;
+    display: inline-block;
+    color: aliceblue;
+}
+
+
+/*以下是搜索框的样式*/
+
+.search-box {
+    position: absolute;
+    top: 37px;
+    left: 1600px;
+    transform: translate(-50%, -50%);
+    background: #7da4ce;
+    height: 40px;
+    border-radius: 40px;
+    padding: 10px;
+}
+
+.search-box a {
+    text-decoration: none;
+}
+
+.search-box:hover>.search-txt {
+    width: 140px;
+    padding: 0px 6px;
+}
+
+.search-btn {
+    color: wheat;
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #7da4ce;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-txt {
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0px;
+    width: 0px;
+    color: rgb(32, 29, 24);
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 40px;
+}
+
+
+/*以下是主内容区*/
+
+.main {
+    top: 100px;
+    left: 222px;
+    width: 1600px;
+    height: 90%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 auto;
+    position: absolute;
+    z-index: 1;
+    font-size: 3em;
+    min-width: 1000px;
+    min-height: 840px;
+    background: rgba(0, 0, 0, 0.3);
+    box-shadow: 0px -2px 2px #585757;
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(92, 99, 102);
+}
+
+.main-box {
+    width: 99.4%;
+    height: 99%;
+    text-align: center;
+    margin: 0px auto;
+    padding: 0px auto;
+    z-index: 1;
+    font-size: 20px;
+    min-width: 900px;
+    min-height: 800px;
+    background: rgba(0, 0, 0, 0.3);
+    box-shadow: 0px -2px 2px #585757;
+    font-family: sans-serif;
+}
+
+.text-box {
+    margin: 0;
+    padding: 0;
+    height: 830px;
+    background-color: rgb(253, 251, 247);
+    border-radius: 3px 3px 0px 0px;
+    text-align: left;
+}
+
+.des {
+    position: relative;
+    font-size: 26px;
+    top: 6px;
+    left: 8px;
+    width: 98.3%;
+    padding: 6px;
+    background-color: rgb(171, 213, 247);
+    border-radius: 6px 6px 0px 0px;
+}
+
+.des2 {
+    position: relative;
+    font-size: 26px;
+    top: 10px;
+    left: 8px;
+    width: 98.3%;
+    padding: 2px 6px 6px 6px;
+    background-color: rgb(171, 213, 247);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.btn {
+    width: 6%;
+    height: 20px;
+    border-radius: 5px;
+    margin: 0;
+    font-size: 0.6rem;
+    font-weight: bolder;
+    border: black;
+    background: white;
+    cursor: pointer;
+    color: rgb(12, 11, 11);
+    text-transform: uppercase;
+    font-family: sans-serif;
+    background-size: 100%;
+    transition: .2s;
+}
+
+.text {
+    position: relative;
+    font-size: 0.8rem;
+    top: 8px;
+    left: 8px;
+    width: 75%;
+    padding: 6px;
+    background-color: rgb(198, 222, 241);
+}
+
+.text p {
+    position: relative;
+    margin: 0px 0px 8px 0px;
+    padding: 0;
+    left: 20px;
+}
+
+.input1 {
+    position: relative;
+    width: 90%;
+    height: 22px;
+    top: 0;
+    left: 0px;
+    outline: none;
+    margin: 0.5rem 0.7rem;
+    font-size: 0.8rem;
+    color: black;
+    font-family: sans-serif;
+    box-shadow: 0px 0.1px 0px black;
+}
+
+.input2 {
+    width: 12%;
+    height: 16px;
+    outline: none;
+    margin: 0;
+    font-size: 0.8rem;
+    color: black;
+    font-family: sans-serif;
+    box-shadow: 0px 0.1px 0px black;
+}
+
+.text2 {
+    position: relative;
+    width: 90%;
+    height: 500px;
+    top: 0;
+    left: 0px;
+    outline: none;
+    margin: 0.5rem 0.7rem;
+    font-size: 0.8rem;
+    color: black;
+    font-family: sans-serif;
+}
+
+.des .little {
+    margin-top: 12px;
+    margin-right: 8px;
+    float: right;
+    font-size: 1rem;
+}
+
+.des2 .little {
+    margin-top: 12px;
+    margin-right: 8px;
+    float: right;
+    font-size: 1rem;
+}
+
+textarea {
+    max-height: 400px;
+    resize: none;
+    padding: 30px 20px 10px 20px;
+    background: url(../images/textareaback.jpg);
+}
+
+
+/*以下是左边栏*/
+
+.sidebar {
+    left: 22px;
+    width: 10%;
+    height: 65%;
+    min-height: 560px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 auto;
+    position: absolute;
+    top: 100px;
+    z-index: 1;
+    font-size: 3em;
+}
+
+.sidebar {
+    min-width: 155px;
+    background: rgba(0, 0, 0, 0.3);
+    box-shadow: 0px -2px 2px #585757;
+    font-family: sans-serif;
+}
+
+.sidebar li {
+    padding-bottom: 7px;
+}
+
+.sidebar .largeside a {
+    min-width: 116px;
+    display: inline-block;
+    text-decoration: none;
+    padding: 3px 15px;
+    color: white;
+    border-radius: 3px;
+    font-size: 0.45em;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.sidebar .largeside a:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+    transition: .1s;
+}
+
+.sidebar .littleside a {
+    min-width: 100px;
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 6px 25px;
+    color: white;
+    border-radius: 3px;
+    font-size: 0.35em;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.sidebar .littleside a:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+    transition: .1s;
+}
+
+.sidebar ul li {
+    display: block;
+    height: 50px;
+}
+
+select {
+    background: rgb(183, 221, 253);
+    /*去掉边框*/
+    border: none;
+    outline: none;
+}
+
+
+/*以下是右边栏*/
+
+.aside-box {
+    float: right;
+    font-size: 0.8rem;
+    width: 355px;
+    height: 674px;
+    padding: 6px;
+    margin-top: 8px;
+    margin-right: 7px;
+    background-color: rgb(198, 222, 241);
+}
+
+.aside h3 {
+    font-size: 25px;
+    text-align: center;
+}
+
+.aside .title {
+    margin-left: 24px;
+    font-size: 20px;
+}
+
+.aside .input2 {
+    position: relative;
+    width: 85%;
+    height: 22px;
+    top: 0;
+    left: 0px;
+    outline: none;
+    margin: 0.5rem 0.7rem;
+    font-size: 0.8rem;
+    color: black;
+    font-family: sans-serif;
+    box-shadow: 0px 0.1px 0px black;
+}
+
+.aside .name {
+    margin: 0 auto;
+    padding-bottom: 8px;
+    width: 300px;
+    background: white;
+    border: 1px solid rgb(53, 137, 216);
+    border-radius: 5px;
+}
+
+.aside li {
+    list-style-type: none;
+    margin-top: 12px;
+    font-size: 20px;
+    text-align: center;
+}
+
+
+/*以下是图标管理*/
